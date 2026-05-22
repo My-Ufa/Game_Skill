@@ -1,15 +1,18 @@
 {
-  "name": "SD-Game Marketplace",
-  "description": "Плагины для сборки ситуационно-деятельностных игр (СД-игр) по методологии игротехника",
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "Game_Skill",
   "version": "1.0.0",
-  "author": "My-Ufa",
+  "description": "Плагины для сборки ситуационно-деятельностных игр (СД-игр) по методологии игротехника",
+  "owner": {
+    "name": "My-Ufa"
+  },
   "plugins": [
     {
-      "id": "sd-game-builder",
-      "name": "Конструктор СД-игры",
+      "name": "sd-game-builder",
       "description": "Опытный игротехник по методологии СД-игр. Проводит через 8 шагов сборки экономической игры: транскрибация → анализ рынка → описание → роли → экономика → плацдарм → ролевые листы → установка.",
       "version": "1.0.0",
-      "path": "plugins/sd-game-builder"
+      "source": "./plugins/sd-game-builder",
+      "category": "productivity"
     }
   ]
 }
