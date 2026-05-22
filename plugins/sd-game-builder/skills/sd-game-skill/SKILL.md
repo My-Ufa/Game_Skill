@@ -103,8 +103,29 @@ description: >
     "market_volume": 50000,
     "product_price": 100,
     "rounds": 3,
-    "years_per_round": 2
+    "years_per_round": 2,
+    "market_mechanic": "по скорости подачи заявки"
   },
+  "player_actions": [
+    {"name": "Подать заявку на рынок", "cost": 0, "condition": "нужна лицензия", "effect": "получить клиентов по правилу рынка"},
+    {"name": "Купить завод", "cost": 500, "condition": "любой Бизнес", "effect": "+200 ед. мощности/такт"}
+  ],
+  "game_items": [
+    {"name": "Завод", "type": "factory", "build_cost": 500, "per_turn_cost": 80, "capacity": 200, "conditions": "любой Бизнес"},
+    {"name": "Офис", "type": "office", "build_cost": 200, "per_turn_cost": 40, "capacity": 100, "conditions": "любой"}
+  ],
+  "technologies": [
+    {
+      "name": "ИИ-оптимизация",
+      "effect": "снижает себестоимость",
+      "effect_value": "−20 у.е./ед.",
+      "dev_cost": 300,
+      "deploy_cost": 100,
+      "per_turn_cost": 30,
+      "who_can_implement": "тех.компания",
+      "payback_rounds": 2
+    }
+  ],
   "mechanics": {
     "basic": [],
     "technology": [],
@@ -112,8 +133,6 @@ description: >
     "financial": []
   },
   "scenarios": [],
-  "game_items": [],
-  "technologies": [],
   "hypotheses": [],
   "victory_conditions": ""
 }
